@@ -2,13 +2,9 @@ import React, {Component} from 'react'
 
 
 class App extends Component {
-    constructor(){
-        super();
-        this.state = { displayBio: false };
+state = {displayBio: false };
 
-        this.toggleRead = this.toggleRead.bind(this);
-    }
-toggleRead(){
+toggleRead = () => {
     this.setState({displayBio: !this.state.displayBio});
 }
 
